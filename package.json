@@ -1,6 +1,6 @@
 {
   "name": "ghost-starter-theme-bootstrap",
-  "description": "A Bootstrap based theme for ghost",
+  "description": "Starter theme with Bootstrap v4 for Ghost Node.JS CMS",
   "version": "1.0.0",
   "engines": {
     "ghost": ">=3.0.0",

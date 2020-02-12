@@ -1,6 +1,6 @@
-# Ghost starter
+# Ghost starter theme with Bootstrap
 
-> Summary
+> Starter theme with Bootstrap v4 for Ghost Node.JS CMS
 
 ## Installation
 
