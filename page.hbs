@@ -1,0 +1,21 @@
+{{!< default}}
+
+{{#post}}
+<article class="{{post_class}}">
+  <div class="jumbotron bg-white pt-0">
+    <h1 class="display-4">{{title}}</h1>
+
+    {{#if custom_excerpt}}
+      <p class="lead">{{custom_excerpt}}</p>
+    {{/if}}
+    
+    {{#if feature_image}}
+      <img class="gh-feature-image" src="{{feature_image}}" alt="{{title}}" />
+    {{/if}}
+
+    <div class="gh-content">
+      {{content}}
+    </div>
+  </div>
+</article>
+{{/post}}

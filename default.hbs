@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="{{asset "built/theme.css"}}" />
+
+  <title>{{meta_title}}</title>
+
+  {{!-- Custom settings from the admin: outputs SEO meta+structured data and important settings, should always be in <head> --}}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+<div class="gh-viewport">
+
+{{navigation}}
+
+<main class="gh-main">
+  <div class="container pt-4">
+    {{!-- All content gets inserted here, page.hbs, post.hbs, etc --}}
+    {{{body}}}
+  </div>
+</main>
+
+{{> footer }}
+
+{{!-- Custom settings from the admin: outputs important scripts - should always be included before closing body tag --}}
+{{ghost_foot}}
+</div>
+</body>
+</html>

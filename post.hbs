@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{#post}}
+<article class="{{post_class}}">
+  <h1 class="gh-title">{{title}}</h1>
+  <div class="h6">{{#foreach authors}}{{name}}{{/foreach}}</div>
+  <small><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span>&bull;</span> {{reading_time}}</small>
+
+  {{#if feature_image}}
+    <img src="{{feature_image}}" alt="{{title}}" />
+  {{/if}}
+
+  <div class="mt-4">
+    {{content}}
+  </div>
+</article>
+{{/post}}

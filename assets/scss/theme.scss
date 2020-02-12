@@ -1,0 +1,48 @@
+/*
+/* This is a development CSS file which is compiled to a minified
+/* production stylesheet in assets/built/theme.css using: npm run build
+/*/
+
+/* Theme variables (including Bootstrap changes)
+/*---------------------------------------------------------- */
+@import "variables.scss";
+
+/* Ghost components */
+/*---------------------------------------------------------- */
+@import "./ghost.scss";
+
+/* Bootstrap components */
+/*---------------------------------------------------------- */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* Minimal custom design. You can remove the code below if needed */
+/*---------------------------------------------------------- */
+html,
+.gh-viewport {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $body-bg;
+}
+
+.gh-head {
+  padding: 3vw 4vw;
+  font-size: 1.6rem;
+  line-height: 1.3em;
+  background: inherit;
+}
+
+.gh-main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.gh-feature-image {
+  width: 100%;
+  margin: 8vmin 0 0;
+}
+
+img {
+  max-width: 100%;
+}

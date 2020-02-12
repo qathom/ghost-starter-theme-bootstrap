@@ -1,0 +1,10 @@
+{{!< default}}
+
+<div class="row">
+{{#get "posts" limit="20" order="published_at asc"}}
+  {{#foreach posts}}
+    {{!-- partials/card.hbs --}}
+    {{> "blog-entry"}}
+  {{/foreach}}
+{{/get}}
+</div>
