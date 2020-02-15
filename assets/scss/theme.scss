@@ -1,6 +1,6 @@
 /*
 /* This is a development CSS file which is compiled to a minified
-/* production stylesheet in assets/built/theme.css using: npm run build
+/* production stylesheet in assets/dist/theme.css using: npm run build
 /*/
 
 /* Theme variables (including Bootstrap changes)
@@ -13,7 +13,7 @@
 
 /* Bootstrap components */
 /*---------------------------------------------------------- */
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 
 /* Minimal custom design. You can remove the code below if needed */
 /*---------------------------------------------------------- */
