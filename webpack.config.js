@@ -1,10 +1,11 @@
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './assets/js/theme.js',
   output: {
     path: path.resolve(__dirname, 'assets', 'dist'),
-    filename: 'theme.js'
+    filename: 'theme.js',
   },
   module: {
     rules: [
@@ -17,15 +18,15 @@ module.exports = {
         }, {
           loader: 'postcss-loader', // Run postcss actions
           options: {
-            plugins: function () { // postcss plugins, can be exported to postcss.config.js
+            plugins() { // postcss plugins, can be exported to postcss.config.js
               return [
-                require('autoprefixer')
+                autoprefixer,
               ];
-            }
-          }
+            },
+          },
         }, {
-          loader: 'sass-loader' // compiles Sass to CSS
-        }]
+          loader: 'sass-loader', // compiles Sass to CSS
+        }],
       },
     ],
   },
