@@ -11,7 +11,7 @@ npm install
 ## Usage
 
 ```bash
-# Dev (watch file changes)
+# Dev (watch file changes and build zip file located in root folder)
 npm run dev
 
 # Build assets

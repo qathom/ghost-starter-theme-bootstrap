@@ -7,6 +7,8 @@
 
   <title>{{meta_title}}</title>
 
+  <link rel="stylesheet" href="{{asset "dist/main.css"}}">
+
   {{!-- Custom settings from the admin: outputs SEO meta+structured data and important settings, should always be in <head> --}}
   {{ghost_head}}
 </head>
@@ -24,7 +26,7 @@
 
 {{> footer }}
 
-<script src="{{asset "dist/theme.js"}}"></script>
+<script src="{{asset "dist/main.js"}}"></script>
 
 {{!-- Custom settings from the admin: outputs important scripts - should always be included before closing body tag --}}
 {{ghost_foot}}
